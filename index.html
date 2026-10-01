@@ -297,9 +297,9 @@ footer .sep{margin-left:auto}
           <h3>WellMind</h3>
           <p class="prob">Predicting mental health risk from a 16 feature self assessment form, paired with a support chatbot trained on intent classification. My B.Tech final year project.</p>
           <p class="res"><span class="k">Result</span>Published in IJIRT as "Well Mind Ai", paper ID 199784, Volume 12 Issue 11.</p>
-          <p class="res"><span class="k">Metrics</span>Five model families on one 80/20 split. <b>SVM linear kernel: 82% accuracy, F1 0.80, AUC-ROC 0.85.</b> Random Forest 87%, XGBoost 89%, LSTM 90%, fine tuned BERT 92%. A <b>stacking ensemble of all five reached 94% accuracy and 0.96 AUC-ROC</b>, so the gain came from combining their errors rather than from the best single model. The intent classifier is a custom 3 layer PyTorch network over bag of words for 20 intents, 10,000 epochs with Adam and a 75% confidence threshold.</p>
+          <p class="res"><span class="k">Metrics</span><b>SVM linear kernel: 82% accuracy, F1 0.80, AUC-ROC 0.85</b> on an 80/20 split. The intent classifier is a custom 3 layer PyTorch feedforward network over bag of words for 20 intents, trained for 10,000 epochs with Adam and a 75% confidence threshold.</p>
           <ul class="chips">
-            <li>SVM</li><li>Random Forest</li><li>XGBoost</li><li>LSTM</li><li>BERT</li><li>Stacking ensemble</li><li>PyTorch</li><li>scikit-learn</li><li>NLTK</li><li>Flask</li>
+            <li>SVM</li><li>PyTorch</li><li>scikit-learn</li><li>NLTK</li><li>Flask</li><li>MySQL</li>
           </ul>
           <div class="lk">
             <a href="https://github.com/Skybox001/wellmind" target="_blank" rel="noopener noreferrer">GitHub</a>
